@@ -1,0 +1,110 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Honk&family=Mukta:wght@500&display=swap');
+
+
+
+body {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+.main-gameboard {
+    min-width: 100%;
+    min-height: 100vh;
+    max-height: 100vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border: red 1px solid;
+    z-index: 0;
+
+}
+
+.miniGame {
+    min-width: 30%;
+    min-height: 30vh;
+    background-color: goldenrod;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    border: green 1px solid;
+
+}
+
+.overlay {
+    padding:0;
+    margin:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(3, 253, 78, 0.5);
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span.won{
+    font-size: 15rem;
+    font-family: 'Honk', sans-serif;
+    margin: 0 auto;
+}
+
+.rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+    min-height: 30%;
+    padding: 0;
+    margin: 0;
+    border: black solid 5px;
+    z-index: 0;
+}
+.inner-rows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 100%;
+    min-height: 30%;
+    padding: 0;
+    margin: 0;
+    z-index: 0;
+}
+.inner-miniGame{
+    min-width: 30%;
+    min-height: 30%;
+    border: black solid 5px;
+    background-color: blanchedalmond;
+    font-size: 4rem;
+    color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+    z-index: 0;
+}
+
+span.sub-win {
+    font-family: 'Honk', system-ui;
+}
+
+span.sub-token {
+    font-family: 'Mukta', sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    align-items: center;
+}
+
